@@ -1,0 +1,10 @@
+<nav class="header">
+    <img id= "logo" src="assets\logo\got-logo.png" alt="logo"/>
+    <ul class="main-nav">
+      <li class="main-nav__item" *ngFor="let element of navigator">
+        <a class="main-nav__item--link" routerLink="{{ element.link }}">{{
+          element.name
+        }}</a>
+      </li>
+    </ul>
+  </nav>

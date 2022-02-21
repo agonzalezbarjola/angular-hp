@@ -1,1 +1,14 @@
-<p>characters works!</p>
+<h5>Characters</h5>
+<div *ngIf="characters" class="character-container">
+  <div
+    *ngFor="let character of characters"
+    routerLink="{{ character.id }}"
+    class="character-container__card"
+    style="background-image: url({{character.img}}); background-size: cover; background-position:top; background-repeat:no-repeat;"
+  >
+ <div class="character-container__card--title">
+    <h6 >{{ character.name }}</h6>
+    <h6> {{character.house}}</h6>
+</div>
+  </div>
+</div>
